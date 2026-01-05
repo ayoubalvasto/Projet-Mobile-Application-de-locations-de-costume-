@@ -1,30 +1,30 @@
-# 🎭 Application de Location de Costumes
+#  Application de Location de Costumes
 
 Application mobile Android native pour la gestion et la location de costumes, accompagnée d'un backend API Laravel.
 
-## 📋 Description du Projet
+##  Description du Projet
 
 Cette application permet aux utilisateurs de consulter un catalogue de costumes disponibles à la location et d'effectuer des réservations. Elle comprend deux interfaces distinctes :
 
 - **Interface Client** : Consultation du catalogue, réservation de costumes, gestion de l'historique des locations
 - **Interface Admin** : Gestion complète du catalogue (CRUD), gestion des clients, suivi des réservations
 
-## 🏗️ Architecture
+## Architecture
 
 Le projet est composé de deux parties principales :
 
-### 📱 Application Android (Frontend)
+###  Application Android (Frontend)
 - **Langage** : Java
 - **SDK Android** : Native Android
 - **Min SDK** : 24 (Android 7.0)
 - **Target SDK** : 36
 
-### 🔧 API Backend Laravel
+### API Backend Laravel
 - **Framework** : Laravel (PHP)
 - **Base de données** : MySQL
 - **Architecture** : API REST
 
-## 🛠️ Technologies Utilisées
+##  Technologies Utilisées
 
 ### Frontend Android
 - **Retrofit2** : Communication avec l'API REST
@@ -111,7 +111,7 @@ LocationCostumesJava/
   - Modification du statut des réservations
   - Suivi des locations
 
-## 🚀 Installation et Configuration
+##  Installation et Configuration
 
 ### Prérequis
 - **Android Studio** (version récente)
@@ -184,7 +184,7 @@ LocationCostumesJava/
    - Connecter un appareil Android ou démarrer un émulateur
    - Run > Run 'app'
 
-## 🔌 Configuration API
+##  Configuration API
 
 L'application Android communique avec le backend via une API REST. Les endpoints principaux sont :
 
@@ -206,23 +206,8 @@ L'application Android communique avec le backend via une API REST. Les endpoints
 - `GET /api/admin/users` : Liste des utilisateurs
 - `GET /api/admin/reservations` : Liste des réservations
 
-## 📸 Captures d'Écran
 
-Les captures d'écran de l'application sont disponibles dans le dossier `screenshots/`.
-
-## 📚 Documentation
-
-- **ANALYSE_PROJET.md** : Analyse technique détaillée du projet
-- **AMELIORATIONS_APPORTEES.md** : Liste complète des améliorations apportées
-
-## 🔒 Sécurité
-
-- Authentification via Laravel Sanctum (API)
-- Validation des données côté serveur
-- Gestion sécurisée des sessions
-- Protection CSRF pour les routes web
-
-## 📝 Base de Données
+##  Base de Données
 
 ### Tables Principales
 
@@ -250,31 +235,7 @@ Les captures d'écran de l'application sont disponibles dans le dossier `screens
 - Table standard Laravel pour l'authentification
 - `id`, `name`, `email`, `password`, `created_at`, `updated_at`
 
-## 🤝 Contribution
+##  Auteurs
 
-Les contributions sont les bienvenues ! Pour contribuer :
-
-1. Fork le projet
-2. Créer une branche pour votre feature (`git checkout -b feature/AmazingFeature`)
-3. Commit vos changements (`git commit -m 'Add some AmazingFeature'`)
-4. Push vers la branche (`git push origin feature/AmazingFeature`)
-5. Ouvrir une Pull Request
-
-## 📄 Licence
-
-Ce projet est sous licence MIT.
-
-## 👥 Auteurs
-
-- Équipe de développement
-
-## 🙏 Remerciements
-
-- Laravel pour le framework backend
-- Android pour la plateforme mobile
-- Toutes les bibliothèques open-source utilisées
-
----
-
-**Note** : Pour toute question ou problème, veuillez ouvrir une issue sur le dépôt du projet.
+- Ayoub Rebai
 
