@@ -260,21 +260,4 @@ Les contributions sont les bienvenues ! Pour contribuer :
 4. Push vers la branche (`git push origin feature/AmazingFeature`)
 5. Ouvrir une Pull Request
 
-## 📄 Licence
-
-Ce projet est sous licence MIT.
-
-## 👥 Auteurs
-
-- Équipe de développement
-
-## 🙏 Remerciements
-
-- Laravel pour le framework backend
-- Android pour la plateforme mobile
-- Toutes les bibliothèques open-source utilisées
-
----
-
-**Note** : Pour toute question ou problème, veuillez ouvrir une issue sur le dépôt du projet.
 
