@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="3dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="12dp">
+
+        <TextView
+            android:id="@+id/tvClientName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Client"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="#212121"/>
+
+        <TextView
+            android:id="@+id/tvClientEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="email"
+            android:textColor="#616161"
+            android:layout_marginTop="4dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="end"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:id="@+id/btnEditClient"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/edit"
+                android:textStyle="bold"
+                android:textColor="@color/primary" />
+
+            <TextView
+                android:id="@+id/btnDeleteClient"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/delete"
+                android:textStyle="bold"
+                android:textColor="@color/status_annulee"
+                android:layout_marginStart="16dp" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

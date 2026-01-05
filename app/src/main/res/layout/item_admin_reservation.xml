@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="3dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="12dp">
+
+        <TextView
+            android:id="@+id/tvResTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Réservation"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="#212121"/>
+
+        <TextView
+            android:id="@+id/tvResDates"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="dates"
+            android:textColor="#616161"
+            android:layout_marginTop="4dp"/>
+
+        <TextView
+            android:id="@+id/tvResClient"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="client"
+            android:textColor="#616161"
+            android:layout_marginTop="4dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp"
+            android:gravity="center_vertical">
+
+            <Spinner
+                android:id="@+id/spStatus"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:minHeight="48dp" />
+
+            <Button
+                android:id="@+id/btnUpdateStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="OK"
+                android:layout_marginStart="10dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
+
+

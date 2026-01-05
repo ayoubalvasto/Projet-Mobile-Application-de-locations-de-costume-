@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg_login"
+    android:gravity="center">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="24dp"
+        app:cardCornerRadius="28dp"
+        app:cardElevation="12dp"
+        app:cardBackgroundColor="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="32dp">
+
+            <!-- Header -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/admin_login_title"
+                android:textStyle="bold"
+                android:textSize="28sp"
+                android:textColor="@color/primary"
+                android:layout_gravity="center"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/acc_s_administrateur"
+                android:textSize="14sp"
+                android:textColor="@color/text_secondary"
+                android:layout_gravity="center"
+                android:layout_marginBottom="32dp"/>
+
+            <!-- Formulaire -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/admin_username"
+                app:boxCornerRadiusTopStart="12dp"
+                app:boxCornerRadiusTopEnd="12dp"
+                app:boxCornerRadiusBottomStart="12dp"
+                app:boxCornerRadiusBottomEnd="12dp"
+                app:boxStrokeWidth="0dp"
+                app:boxBackgroundMode="outline"
+                app:boxStrokeColor="@color/primary"
+                style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+                android:layout_marginBottom="16dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etAdminUser"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    tools:ignore="VisualLintTextFieldSize" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/admin_password"
+                app:boxCornerRadiusTopStart="12dp"
+                app:boxCornerRadiusTopEnd="12dp"
+                app:boxCornerRadiusBottomStart="12dp"
+                app:boxCornerRadiusBottomEnd="12dp"
+                app:boxStrokeWidth="0dp"
+                app:boxBackgroundMode="outline"
+                app:boxStrokeColor="@color/primary"
+                style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+                android:layout_marginBottom="24dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etAdminPass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    tools:ignore="VisualLintTextFieldSize" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnAdminLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/admin_login"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"
+                app:cornerRadius="28dp"
+                app:backgroundTint="@color/primary"
+                tools:ignore="VisualLintButtonSize" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
+

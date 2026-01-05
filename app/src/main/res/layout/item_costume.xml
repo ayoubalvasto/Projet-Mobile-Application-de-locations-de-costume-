@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="24dp"
+    app:cardElevation="8dp"
+    app:cardUseCompatPadding="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:clickable="true"
+    android:focusable="true"
+    app:cardBackgroundColor="@color/card_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <!-- Image avec radius moderne -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="2dp">
+
+            <ImageView
+                android:id="@+id/imgCostume"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@android:drawable/ic_menu_gallery"
+                android:background="@color/surface_variant"/>
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:orientation="vertical"
+            android:layout_gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/tvNom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nom du Costume"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/text_primary"
+                android:letterSpacing="0.01"/>
+
+            <!-- Prix avec badge moderne -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="8dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/tvPrix"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="200 DH"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/price_highlight"
+                    android:background="@drawable/price_badge"
+                    android:paddingStart="12dp"
+                    android:paddingEnd="12dp"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="4dp"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvTaille"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Taille : M"
+                android:textSize="14sp"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/text_secondary"/>
+
+            <!-- Badge de disponibilité -->
+            <View
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:background="@drawable/dot_available"
+                android:layout_marginTop="6dp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
