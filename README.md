@@ -206,21 +206,6 @@ L'application Android communique avec le backend via une API REST. Les endpoints
 - `GET /api/admin/users` : Liste des utilisateurs
 - `GET /api/admin/reservations` : Liste des réservations
 
-## 📸 Captures d'Écran
-
-Les captures d'écran de l'application sont disponibles dans le dossier `screenshots/`.
-
-## 📚 Documentation
-
-- **ANALYSE_PROJET.md** : Analyse technique détaillée du projet
-- **AMELIORATIONS_APPORTEES.md** : Liste complète des améliorations apportées
-
-##  Sécurité
-
-- Authentification via Laravel Sanctum (API)
-- Validation des données côté serveur
-- Gestion sécurisée des sessions
-- Protection CSRF pour les routes web
 
 ##  Base de Données
 
